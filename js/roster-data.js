@@ -34,7 +34,7 @@ window.ROSTER = {
     // Wingers
     { number: 11, first: "First", last: "Last", position: "W",  grade: "Senior", year: "2027", goals: 0, assists: 0, seasons: 3, photo: "" },
     // Strikers
-    { number: 9,  first: "First", last: "Last", position: "ST", grade: "Junior", year: "2028", goals: 0, assists: 0, seasons: 2, photo: "" },
+    { number: 7,  first: "Grayson", last: "Gorski", position: "ST", grade: "Sophomore", year: "2029", goals: 26, assists: 8, seasons: 2, photo: "gg.jpg" },
   ],
 
   jv: [
