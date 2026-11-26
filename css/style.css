@@ -165,3 +165,5 @@ table.list { width: 100%; border-collapse: collapse; font-size: .95rem; }
   .ig-highlights .hl-video { justify-self: center; }
 }
 @media (max-width: 640px) { .ig-grid { grid-template-columns: 1fr; } }
+/* Wider header so the full menu fits (Team + Hall of Fame tabs) */
+.site-header .wrap { width: min(1200px, 100% - 2rem); }

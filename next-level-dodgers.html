@@ -9,6 +9,10 @@
 <meta property="og:image" content="images/logo.png">
 <link rel="icon" href="images/logo.png">
 <link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&display=swap">
+<link rel="stylesheet" href="css/cards.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -23,9 +27,10 @@
       <ul class="nav">
 <li><a href="index.html">Home</a></li>
 <li><a href="calendar.html">Schedule</a></li>
-<li><a href="coaches.html">Coaches</a></li>
+<li class="has-sub"><button type="button" class="sub-toggle" aria-expanded="false">Team <span aria-hidden="true">▾</span></button><ul class="sub"><li><a href="roster.html">Roster</a></li><li><a href="coaches.html">Coaches</a></li></ul></li>
 <li class="has-sub"><button type="button" class="sub-toggle" aria-expanded="false">Honors <span aria-hidden="true">▾</span></button><ul class="sub"><li><a href="national-recognition.html">National Recognition</a></li><li><a href="all-state.html">All-State</a></li><li><a href="all-county.html">All-County</a></li></ul></li>
 <li class="has-sub"><button type="button" class="sub-toggle" aria-expanded="false">Records <span aria-hidden="true">▾</span></button><ul class="sub"><li><a href="season-records.html">Season Records</a></li><li><a href="all-time-list.html">All-Time List</a></li></ul></li>
+<li><a href="hall-of-fame.html">Hall of Fame</a></li>
 <li><a href="next-level-dodgers.html" aria-current="page">Next Level Dodgers</a></li>
 <li><a href="workouts-nutrition.html">Workouts / Nutrition</a></li>
 <li><a href="forms.html">Forms</a></li>
@@ -52,11 +57,11 @@
 
 <main id="main" class="wrap">
 <h1>Next Level Dodgers</h1>
-<p class="lede">Dodgers who went on to play college soccer.</p>
+<p class="lede">Dodgers who went on to play college soccer. Select a player to see them at Madison and in college.</p>
 
 <!-- ===== NCAA Division I ===== -->
 <section>
-  <h2>NCAA Division I</h2>
+  <h2 class="level-head"><span class="level-logo"><img src="images/next-level/levels/ncaa-di.jpg" alt="NCAA Division I logo" onerror="this.parentNode.classList.add('empty');this.remove()"></span>NCAA Division I</h2>
   <div class="gallery">
     <figure><img src="images/next-level/gui-dos-santos.jpg" alt="Gui Dos Santos '26" loading="lazy"><figcaption><strong>Gui Dos Santos '26</strong><span>Seton Hall University '30</span></figcaption></figure>
     <figure><img src="images/next-level/schuyler-fuchsman.jpg" alt="Schuyler Fuchsman '16" loading="lazy"><figcaption><strong>Schuyler Fuchsman '16</strong><span>Boston University '20</span></figcaption></figure>
@@ -65,19 +70,30 @@
   </div>
 </section>
 
+<!-- ===== NCAA Division II ===== -->
+<section>
+  <h2 class="level-head"><span class="level-logo"><img src="images/next-level/levels/ncaa-dii.jpg" alt="NCAA Division II logo" onerror="this.parentNode.classList.add('empty');this.remove()"></span>NCAA Division II</h2>
+  <!-- TO ADD A DIVISION II PLAYER: delete the "Players coming soon" line, then paste a line like this
+       inside the gallery (copy one from another section and change the details):
+       <figure><img src="images/next-level/player-name.jpg" alt="Player Name 'YY" loading="lazy"><figcaption><strong>Player Name 'YY</strong><span>College Name 'YY</span></figcaption></figure> -->
+  <p class="muted">Players coming soon.</p>
+  <div class="gallery">
+  </div>
+</section>
+
 <!-- ===== NCAA Division III ===== -->
 <section>
-  <h2>NCAA Division III</h2>
+  <h2 class="level-head"><span class="level-logo"><img src="images/next-level/levels/ncaa-diii.jpg" alt="NCAA Division III logo" onerror="this.parentNode.classList.add('empty');this.remove()"></span>NCAA Division III</h2>
   <div class="gallery">
     <figure><img src="images/next-level/nolan-keane.jpg" alt="Nolan Keane '26" loading="lazy"><figcaption><strong>Nolan Keane '26</strong><span>Misericordia</span></figcaption></figure>
     <figure><img src="images/next-level/mm.jpg" alt="Matt Munoz '25" loading="lazy"><figcaption><strong>Matt Munoz '25</strong><span>Drew University</span></figcaption></figure>
     <figure><img src="images/next-level/jd.jpg" alt="JD Aritzabal '25" loading="lazy"><figcaption><strong>JD Aritzabal '25</strong><span>FDU</span></figcaption></figure>
-    <figure><img src="images/next-level/juan-pineda.jpg" alt="Juan Pineda '22" loading="lazy"><figcaption><strong>Juan Pineda '22</strong><span>FDU '25</span></figcaption></figure>
+    <figure><img src="images/next-level/Juan-Pineda.jpg" alt="Juan Pineda '22" loading="lazy"><figcaption><strong>Juan Pineda '22</strong><span>FDU '25</span></figcaption></figure>
     <figure><img src="images/next-level/christian-williams.jpg" alt="Christian Williams '21" loading="lazy"><figcaption><strong>Christian Williams '21</strong><span>Susquehanna University '25</span></figcaption></figure>
-    <figure><img src="images/next-level/brandom-ocampo.jpg" alt="Brandom Ocampo '20" loading="lazy"><figcaption><strong>Brandom Ocampo '20</strong><span>Drew University '24</span></figcaption></figure>
+    <figure><img src="images/next-level/Brandom-Ocampo.jpg" alt="Brandom Ocampo '20" loading="lazy"><figcaption><strong>Brandom Ocampo '20</strong><span>Drew University '24</span></figcaption></figure>
     <figure><img src="images/next-level/lucas-digiacomo.jpg" alt="Lucas DiGiacomo '19" loading="lazy"><figcaption><strong>Lucas DiGiacomo '19</strong><span>Gettysburg '23</span></figcaption></figure>
     <figure><img src="images/next-level/matt-warshaw.jpg" alt="Matt Warshaw '18" loading="lazy"><figcaption><strong>Matt Warshaw '18</strong><span>FDU '22</span></figcaption></figure>
-    <figure><img src="images/next-level/anton-benedikt.jpg" alt="Anton Benedikt '13" loading="lazy"><figcaption><strong>Anton Benedikt '13</strong><span>Penn State Behrend '17</span></figcaption></figure>
+    <figure><img src="images/next-level/Anton-Benedikt.jpg" alt="Anton Benedikt '13" loading="lazy"><figcaption><strong>Anton Benedikt '13</strong><span>Penn State Behrend '17</span></figcaption></figure>
     <figure><img src="images/next-level/vincent-bennett.jpg" alt="Vincent Bennett '12" loading="lazy"><figcaption><strong>Vincent Bennett '12</strong><span>RPI '17</span></figcaption></figure>
     <figure><img src="images/next-level/daniel-giraldo.jpg" alt="Daniel Giraldo '12" loading="lazy"><figcaption><strong>Daniel Giraldo '12</strong><span>Drew University '17</span></figcaption></figure>
     <figure><img src="images/next-level/jackson-hurst.jpg" alt="Jackson Hurst '11" loading="lazy"><figcaption><strong>Jackson Hurst '11</strong><span>Drew University '15</span></figcaption></figure>
@@ -90,7 +106,7 @@
 
 <!-- ===== NCAA Club ===== -->
 <section>
-  <h2>NCAA Club</h2>
+  <h2 class="level-head"><span class="level-logo"><img src="images/next-level/levels/ncaa-club.jpg" alt="NCAA Club logo" onerror="this.parentNode.classList.add('empty');this.remove()"></span>NCAA Club</h2>
   <!-- TO ADD A CLUB PLAYER: save the photo in images/next-level/, then on one of the lines below
        change club-placeholder.jpg to the photo's file name and replace Player Name 'YY / College Name 'YY.
        Copy a whole <figure>...</figure> line to add more; delete one to remove it. -->
@@ -121,6 +137,7 @@
     </ul>
   </div>
 </footer>
+<script src="js/next-level.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
