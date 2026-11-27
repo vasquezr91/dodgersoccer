@@ -195,3 +195,11 @@ button.pcard:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px
   .level-logo { min-width: 48px; }
   .level-logo.empty { width: 48px; }
 }
+
+/* Next Level pop-up: Madison career stats + accolades */
+.nl-career { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.nl-career h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin: 0 0 .6rem; }
+.nl-career .stat-row { margin-bottom: 1.25rem; }
+.nl-acc { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .4rem .75rem; }
+.nl-acc li { position: relative; padding: .45rem .7rem .45rem 1.9rem; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; font-size: .92rem; }
+.nl-acc li::before { content: "★"; position: absolute; left: .65rem; top: .42rem; color: var(--gold); }

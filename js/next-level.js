@@ -35,6 +35,28 @@
       "<figcaption>" + esc(label) + "</figcaption></figure>";
   }
 
+  // High school stats + accolades from js/next-level-data.js
+  function careerHTML(file) {
+    var data = window.NEXT_LEVEL || {};
+    var p = data[file];
+    if (!p) {   // also match if only the capital letters differ
+      for (var k in data) { if (k.toLowerCase() === file.toLowerCase()) { p = data[k]; break; } }
+    }
+    if (!p) return "";
+    var stats = p.stats || [];
+    var acc = p.accolades || [];
+    return '<div class="nl-career">' +
+      "<h3>Madison Career</h3>" +
+      (stats.length ? '<div class="stat-row">' + stats.map(function (st) {
+        var v = (st[1] === undefined || st[1] === "") ? "—" : st[1];
+        return '<div class="stat"><strong>' + esc(v) + "</strong><span>" + esc(st[0]) + "</span></div>";
+      }).join("") + "</div>" : "") +
+      "<h3>Accolades</h3>" +
+      (acc.length ? '<ul class="nl-acc">' + acc.map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ul>"
+                  : '<p class="muted">None listed</p>') +
+    "</div>";
+  }
+
   function open(fig) {
     var img = fig.querySelector("img");
     var src = img.getAttribute("src");
@@ -54,7 +76,7 @@
       '<div class="nl-photos">' +
         photoBox(hs, "At Madison", "Photo coming soon") +
         photoBox(src, "In College", "Photo coming soon") +
-      "</div>";
+      "</div>" + careerHTML(file);
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
   }
 
