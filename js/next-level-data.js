@@ -22,10 +22,10 @@
 window.NEXT_LEVEL = {
   // Gui Dos Santos
   "gui-dos-santos.jpg": {
-    stats: [ ["Goals", 33], ["Assists", 27], ["Varsity Years", ""] ],
+    stats: [ ["Goals", 33], ["Assists", 27], ["Varsity Years", "4"] ],
     accolades: [
       "All-State North II (2025)",
-      "All-State Nj.com 3rd Team (2025)",
+      "All-State NJ.com 3rd Team (2025)",
       "All-County 2nd Team (2025)",
       "All-State All Group 2 3rd Team (2024)",
       "All-State North II (2024)",
@@ -36,13 +36,13 @@ window.NEXT_LEVEL = {
   },
   // Schuyler Fuchsman
   "schuyler-fuchsman.jpg": {
-    stats: [ ["Goals", ""], ["Assists", 11], ["Varsity Years", ""] ],
+    stats: [ ["Goals", ""], ["Assists", 11], ["Varsity Years", "1"] ],
     accolades: [
     ],
   },
   // Matt Gilbert
   "matt-gilbert.jpg": {
-    stats: [ ["Saves", 180], ["Shutouts", 32], ["Varsity Years", ""] ],
+    stats: [ ["Saves", 180], ["Shutouts", 32], ["Varsity Years", "4"] ],
     accolades: [
       "All-County 1st Team (2011)",
       "All-County 1st Team (2010)",
@@ -51,7 +51,7 @@ window.NEXT_LEVEL = {
   },
   // Jonathon Aguirre
   "jonathon-aguirre.jpg": {
-    stats: [ ["Goals", ""], ["Assists", ""], ["Varsity Years", ""] ],
+    stats: [ ["Goals", ""], ["Assists", ""], ["Varsity Years", "4"] ],
     accolades: [
       "All-County 1st Team (2009)",
       "NJ Gatorade Player of the Year (2009)",
@@ -59,7 +59,7 @@ window.NEXT_LEVEL = {
   },
   // Nolan Keane
   "nolan-keane.jpg": {
-    stats: [ ["Goals", ""], ["Assists", ""], ["Varsity Years", ""] ],
+    stats: [ ["Goals", ""], ["Assists", ""], ["Varsity Years", "3"] ],
     accolades: [
       "All-State North II (2025)",
       "All-County 3rd Team (2025)",
@@ -67,7 +67,7 @@ window.NEXT_LEVEL = {
   },
   // Matt Munoz
   "mm.jpg": {
-    stats: [ ["Goals", 35], ["Assists", 17], ["Varsity Years", ""] ],
+    stats: [ ["Goals", 35], ["Assists", 17], ["Varsity Years", "4"] ],
     accolades: [
       "All-State SCANJ 1st Team (2024)",
       "North II Sectional Player of the Year (2024)",
